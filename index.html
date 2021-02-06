@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Knitting Page</title>
+
+  <style>
+/* <!-- Style attribute for the homepage picture. --> */
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-bottom: 80px;
+  /* top: 10px; */
+}
+
+/* <!-- creating three columns for each row; each colume takes 30% of the width with 1% wide padding. --> */
+.column {
+  float: left;
+  width: 30%;
+  padding: 1%;
+}
+
+/* <!-- Codes from w3schools.com; Do not reli know how this works for now; gonna ask if possible. --> */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  </style>
+  </head>
+
+<!-- Setting overall background color and text color at the beginning of the body. -->
+  <body style="background-color:#e1d5d8; color:#353331;">
+    <h1 style="text-align:center; padding-top: 20px;">Yongwen's Knitting Page</h1>
+    <!-- This is the homepage picture that has its style attribute seperated as a class so that it could center at the middle of the website. -->
+    <img src="homepageSign.png" class="center">
+
+<!-- Creating the first row and the 3 columns in it; Each column contains a name for the specific knitting product and its picture. -->
+    <div class="row">
+      <div class="column">
+        <p>LAMB DRAWSTRING POUCH</p>
+        <img src="product1.jpg">
+      </div>
+      <div class="column">
+        <p>PINEAPPLE DRAWSTRING POUCH</p>
+        <img src="product2.jpg">
+      </div>
+      <div class="column">
+        <p>SINGLE-EYE MONSTER</p>
+        <img src="product3.jpg">
+      </div>
+    </div>
+
+<!-- Creating the second row. -->
+    <div class="row">
+      <div class="column">
+        <p>BIRTHDAY CAKE HAT</p>
+        <img src="product4.jpg">
+      </div>
+      <div class="column">
+        <p>TELETUBBIES – PO</p>
+        <img src="product5.jpg">
+      </div>
+      <div class="column">
+        <p>TELETUBBIES – DIPSY</p>
+        <img src="product6.jpg">
+      </div>
+    </div>
+
+<!-- Creating the third row. -->
+    <div class="row">
+      <div class="column">
+        <p>TINY TEDDY BEAR</p>
+        <img src="product7.jpg">
+      </div>
+      <div class="column">
+        <p>WE BARE BEARS – GRIZZLY</p>
+        <img src="product8.jpg">
+      </div>
+      <div class="column">
+        <p>PATRICK STAR</p>
+        <!-- Resizing the picture of Patrick because it has a different size from the other pictures. -->
+        <img src="product9.jpg" style="width: 300px; height: 300px;">
+      </div>
+    </div>
+
+  </body>
+</html>
